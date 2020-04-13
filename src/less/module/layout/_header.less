@@ -1,0 +1,244 @@
+
+header.main-header{
+        padding:20px 40px 10px; 
+        display: block;
+        position: relative;
+        width: 100%;
+        border-bottom: 1px solid #e3e3e3;
+        -webkit-box-shadow: 0 4px 12px 0 rgba(0,0,0,.05);
+        box-shadow: 0 4px 12px 0 rgba(0,0,0,.05);
+        .logo-box{
+            display: inline-block;
+            .logo{
+                display: block;
+                .logo-d{
+                    width:100px;
+                    outline: none;
+                    }
+                }
+            }
+        .navbar{
+            display: inline-block;
+            vertical-align: top;
+            margin-top: 32px;
+            margin-left: 1%;
+                .nav-box{
+                    display: block;
+                    .navlinks{
+                        display: inline-block;
+                        margin: 0 30px;
+                        .category-link{
+                            font-family: Sequel-Book-Body;
+                            font-size: 12.5px;
+                            cursor: pointer;
+                            position: relative;
+                            &:after{
+                                content: '';
+                                border: 1px solid #c7572b;
+                                width: 8px;
+                                height: 8px;
+                                display: inline-block;
+                                position: absolute;
+                                border-width: 2px 2px 0 0;
+                                transform: rotate(134deg);
+                                top: 3px;
+                                right: -15px;
+                            }
+                            &._open{
+                                 &:after{
+                                transform: rotate(-45deg);
+                                top: 6px;
+                            }
+                            }
+                        }
+                        .sub-box{
+                                position: absolute;
+                                width: 100%;
+                                z-index: 999;
+                                left: 0;
+                                padding-left: 13% !important;
+                                display: none;
+                                padding: 37px 0 25px;
+                                margin-top: 20px;
+                                background: #ededed7d;
+                            ul{
+                                margin: 0;
+                                padding:0;
+                                display: inline-block;
+                                margin-right: 60px;
+                                padding-left: 40px;
+                                li{
+                                    list-style: none;
+                                    position:relative;
+                                    
+                                    a{
+                                        font-size: 12px;
+                                        font-family: Sequel-Book;
+                                    }
+                                    &.linktitle{
+                                        font-family: Sequel-Bold;
+                                        font-size: 12px;
+                                        span{
+                                                position: absolute;
+                                            width: 40px;
+                                            left: -54px;
+                                            top: -8px;
+                                        }
+                                    }
+                                }
+
+                            }
+                         &.second{
+                                padding-left: 0 !important;
+                                    padding-bottom: 0px;
+                                        padding-top: 18px;
+                                ul{
+                                    li{
+                                        position:relative;
+                                        display: inline-block;
+                                            padding-bottom: 10px;
+                                            margin:0 60px;
+                                        img{
+                                            border-radius:50%;
+                                        }
+                                        span{
+                                            display: block;
+                                            text-align: center;
+                                        }
+                                        &.new{
+                                            &:before{
+                                                content: 'New';
+                                                position: absolute;
+                                                top: -10px;
+                                                left: 34%;
+                                                font-size: 11px;
+                                                font-family: Sequel-Book;
+                                                background: #c7572b;
+                                                color: #fff;
+                                                border-radius: 5px;
+                                                width: 30px;
+                                                text-align: center;
+
+                                            }
+                                        }
+                                        &:hover{
+                                            span{
+                                                color: #c7572b;
+                                            }
+                                        }
+                                    }
+                                }
+                            }  
+                        }
+
+                        &.page-link{
+                            a{
+                                font-family: Sequel-Book;
+                                font-size: 12px;
+                            }
+                        }
+                    }        
+                }
+            }
+            .action-block{
+                .navbar;
+                float: right;
+                .icons{
+                    display: inline-block;
+                    margin:0 11px;
+                    cursor: pointer;
+                    i{
+                        font-size: 21px;
+                    }
+                }
+                .search{
+                    position:relative;
+                    cursor: pointer;
+                    .search-box {
+                        position: absolute;
+                        right: -6px;
+                        width: 260px;
+                        top: -11px;
+                        width: 0px;
+                        overflow: hidden;
+                        transition: width .3s ease-in-out;
+                        &.open{
+                            width: 420px;
+                        }    
+                    }input {
+                        width: 100%;
+                        padding: 10px;
+                        font-size: 14px;
+                        border: 1px solid #e3e3e3;
+                        border-radius: 4px;
+                        outline: none;
+                        transition: border-color .2s ease-in-out;
+                        font-family: Sequel-Book;
+                        &:focus{
+                            border-color:#000;
+                        }
+                        
+                    }
+                    span.search-close {
+                            position: absolute;
+                            top: 10px;
+                            right: 7px;
+                        }
+                 }
+                .sidebar-cart {
+                    position: fixed;
+                    width: 350px;
+                    background: #fff;
+                    right: 0;
+                    height: 100%;
+                    top: 0;
+                    z-index: 999;
+                    text-align: center;
+                    transform: translateX(350px);
+                    transition: transform .3s cubic-bezier(0.99, 0.22, 0.35, 0.84);
+                     .cart-header {
+                        padding: 40px 40px 35px;
+                        border-bottom: 1px solid #ccc;
+                        color: #c7572b;
+                        font-family: Sequel-Book;
+                        span.close {
+                            position: absolute;
+                            top: 10px;
+                            right: 14px;
+                            color: #333;
+                            font-size: 11px;
+                            cursor: pointer;
+                        }
+                        .count {
+                        font-family: Sequel-Bold;
+                    }
+
+                    }
+                    .title{
+                        padding:40px 0 0;
+                    }
+                    &._open{
+                         transform: translateX(0px);
+                    }
+                
+                }
+            }
+            .navigation-box{
+                min-height: 0;
+                overflow: hidden;
+                width: 100%;
+                display: block;
+                transition: min-height .3s ease-in-out;
+                &.active{
+                    min-height: 140px;
+                }
+            }
+        }
+.bg {
+    display: none;
+    position: fixed;
+    top: 0;
+    background: #00000042;
+    width: 100%;
+    height: 100% !important;
+}        

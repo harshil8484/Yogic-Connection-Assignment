@@ -1,0 +1,323 @@
+main.shop-base {
+    max-width: 1640px;
+    width: 100%;
+    position: relative;
+    margin: 0 auto;
+    min-height: 800px;
+}
+.hero-banner-section{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+	position:relative;
+	min-height: 570px;
+	overflow: hidden;
+	> div.two-col{
+		flex: 0 0 50%;
+		img{
+			width: 100%;
+			display: block;
+		}
+	}
+	.hero-banner-text {
+	    position: absolute;
+	    top: 30%;
+	    font-size: 27px;
+	    line-height: 62px;
+	    width: 40%;
+	    text-align: center;
+	    color: @primay_color;
+	    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+	    z-index: 999;
+	}
+	button.shop-the-range {
+    outline: none;
+    background: #FF5F29;
+    border: 1px solid #FF5F29;
+    padding: 10px 15px;
+    border-radius: 4px;
+    color: #fff;
+    font-size: 14px;
+    font-family: Sequel-Book;
+    letter-spacing: 1px;
+    transition: background .3s ease-in-out;
+    cursor: pointer;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+		&:hover{
+			    background: #ff5f29d6;
+		}
+	}
+}
+.hp-products {
+    display: block;
+    position: relative;
+    padding: 0 50px;
+    width: 100%;
+    margin: 70px 0 40px;
+        .swiper-title{
+    	text-align: center;
+    	margin: 0 0 30px;
+    	stitle {
+	    font-size: 19px;
+	}
+
+    }
+
+    .swiper-container{
+    	height: 460px;
+    	img{
+    		min-height:300px;
+    	}
+    	.swiper-slide{
+    		text-align: center;
+    	}
+    	.swiper-scrollbar{
+    		&:before{
+    			display: none;
+    		}
+    	}
+    }
+    .product-content{
+    	text-align: center;
+    	h4{
+    		text-transform: uppercase;
+    		margin:0 0 8px;
+    	}
+    	p{
+    		font-size: 12px;
+    		margin:0 0 9px;
+    		font-family: Sequel-Book;
+    	}
+    	.price{
+
+    	}
+    	&.no-swatch{
+    		margin-top: 22px;
+    	}
+    }
+}
+.product-banner-block {
+    display: block;
+    position: relative;
+    width: 100%;
+    margin:70px 0 40px;
+    .two-col-section {
+	    display: flex;
+	    flex-direction: row;
+	    flex-wrap: wrap;
+	    overflow: hidden;
+	    cursor: pointer;
+		.grid{
+			flex:0 0 50%;
+			position:relative;
+			img{
+				display: block;
+			}
+			&.bg-black {
+			    background: black;
+			    color: #fff;
+			    padding: 5rem;
+				h3{
+					font-size: 3rem;
+    				line-height: 4rem;
+				}
+				a{
+					
+					font-size: 22px;
+				    color: #fff;
+				    text-decoration: underline;
+					&:hover{
+						text-decoration: none;
+					}
+				}
+			}
+			&.before{
+				&:before{
+				content: '';
+			    width: 40px;
+			    height: 100%;
+			    background: black;
+			    display: block;
+			    position: absolute;
+			        top: -3px;
+			    left: -19px;
+			    transform: rotate(-5deg);
+			    }
+			}
+			&.after{
+				&:before{
+				content: '';
+			    width: 40px;
+			    height: 100%;
+			    background: black;
+			    display: block;
+			    position: absolute;
+			        top: -3px;
+			    left: -19px;
+			    transform: rotate(-5deg);
+			    }
+			}
+
+		}
+		&:nth-child(2){
+			.banner{
+				order:2;
+			}
+		}
+		.bg-block {
+		    position: absolute;
+		    top: 0;
+		    height: 100%;
+		    background: #0a0a0a69;
+		    opacity: 0;
+		    width: 100%;
+		    transition: opacity .3s ease-in-out;
+
+		}
+		&:hover .bg-block{
+			opacity: 1;
+		}
+		.bg-block-content {
+		    position: absolute;
+		    top: 0;
+		    color: #fff;
+		    font-size: 1.6rem;
+		    padding: 30px;
+		    width: 400px;
+		}
+	}
+
+}
+.testmonial-section {
+    display: block;
+    width: 100%;
+    position: relative;
+    margin: 60px 0;
+    .context {
+	    width: 700px;
+	    margin: 0 auto;
+	    padding: 20px 35px;
+	    font-size: 16px;
+	    text-align: center;
+	    line-height: 26px;
+	    box-shadow: 0 10px 20px #c7c7c7;
+	}
+}
+.swatches span {
+    cursor: pointer;
+        width: 16px;
+    height: 16px;
+    display: inline-block;
+    border-radius: 50%;
+		&.green {
+	    	background: green;
+		}
+		&.blue {
+	    	background: blue;
+		}
+		&.red {
+	    	background: red;
+		}
+	&:hover {
+    border: 1px solid black;
+}
+}
+.swiper-button-next {
+    border-bottom: 1px solid #b6afaf;
+    border-right: 1px solid #b6afaf;
+    width: 25px !important;
+    height: 25px !important;
+    background-image: none !important;
+    transform: rotate(-45deg);
+    top: 40% !important;
+    outline: none;
+}
+.swiper-button-prev {
+    border-bottom: 1px solid #b6afaf;
+    border-right: 1px solid #b6afaf;
+    width: 25px !important;
+    height: 25px !important;
+    background-image: none !important;
+    transform: rotate(-225deg);
+    top: 40% !important;
+    outline: none;
+}
+.swiper-container-horizontal>.swiper-scrollbar {
+    height: 1px !important;
+    background: #C4C4C4;
+    margin-bottom: 30px;
+    left: 0;
+    right: 0;
+    margin: 0 auto 20px;
+}
+  .swiper-scrollbar-drag{
+	top:-7px !important;
+	height: 14px !important;
+	background: #000 !important;
+}
+.swiper-scrollbar {
+    width: 418px !important;
+}
+    .image-container {
+  position: relative;
+}
+.image-container img {
+  position: absolute;
+  animation-name: multiple-image-crossfade;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-duration: 15s;
+}
+.image-container img:nth-of-type(1) {
+  animation-delay: 11s;
+}
+.image-container img:nth-of-type(2) {
+  animation-delay: 7s;
+}
+.image-container img:nth-of-type(3) {
+  animation-delay: 3s;
+}
+.image-container img:nth-of-type(4) {
+  animation-delay: 0;
+}
+     .image-container2 {
+  position: relative;
+}
+.image-container2 img {
+  position: absolute;
+  animation-name: multiple-image-crossfade;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-duration: 16s;
+}
+.image-container2 img:nth-of-type(1) {
+  animation-delay: 12s;
+}
+.image-container2 img:nth-of-type(2) {
+  animation-delay: 8s;
+}
+.image-container2 img:nth-of-type(3) {
+  animation-delay: 4s;
+}
+.image-container2 img:nth-of-type(4) {
+  animation-delay: 0;
+}
+
+@keyframes multiple-image-crossfade {
+  0% {
+    opacity: 1;
+  }
+  17% {
+    opacity: 1;
+  }
+  25% {
+    opacity: 0;
+  }
+  92% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
